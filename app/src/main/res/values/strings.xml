@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">Learning Academy</string>
+    <string name="app_name">Yasin\'s Learning Academy</string>
     <string name="title_activity_pdf">PdfActivity</string>
+    <string name="title_activity_tasbih">TasbihActivity</string>
 </resources>

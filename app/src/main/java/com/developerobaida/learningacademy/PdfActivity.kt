@@ -48,24 +48,24 @@ class PdfActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         title = intent.getStringExtra("title") ?: "Not found"
-        val  data = intent.getIntExtra("data",0)
+        val  data = intent.getStringExtra("data")
 
-        if (data == 0){
+        if (data!!.contains("makhraj.pdf")){
             fileName = "makhraj.pdf"
             pdfUrl = "https://drive.google.com/uc?export=download&id=1RR093Xg-xBETO3s_0izGJt-rFmG2kCDu"
 
-        }else if (data==1){
+        }else if (data!!.contains("nurani_poddhoti.pdf")){
             fileName = "nurani_poddhoti.pdf"
             pdfUrl = "https://drive.google.com/uc?export=download&id=1tlYWvjUyjafjM4sGwtA3bD-YVuyd2UNw"
-        }else if (data ==2){
+        }else if (data!!.contains("nadiyatul_quran.pdf")){
             fileName = "nadiyatul_quran.pdf"
             pdfUrl = "https://drive.google.com/uc?export=download&id=1QcNhBmThglh06TyfgSAXKsQkOK-i6hVy"
-        }else if (data ==3){
+        }else if (data!!.contains("nadiya_ampara.pdf")){
 
             fileName = "nadiya_ampara.pdf"
             pdfUrl = "https://drive.google.com/uc?export=download&id=1n8ihDVSvENQUV4-0O0j4EJiRfAuRnRh6"
 
-        }else if (data == 4){
+        }else if (data!!.contains("al_quran.pdf")){
 
             fileName = "al_quran.pdf"
             pdfUrl = "https://drive.google.com/uc?export=download&id=1biE4dyXQVaLdAXPhR42ZWJ52u3PuSGSQ"
